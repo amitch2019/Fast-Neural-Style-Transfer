@@ -1,8 +1,8 @@
-# Fast-Neural-Style-Transfer
-
 # Fast Neural Style Transfer
 
 This repository contains a PyTorch implementation of fast neural style transfer based on Johnson's method, allowing you to apply artistic styles to images in real-time once a model is trained.
+
+![Chicago Skyline in Edward Hopper Style](images/stylized_EdHopper_chicago.jpg)
 
 ## Overview
 
@@ -75,6 +75,10 @@ content_losses, style_losses, total_losses = train_style_transfer(
 )
 ```
 
+### Training Visualization
+
+During training, the model simultaneously minimizes content and style losses. The notebook will display loss curves showing how these values change over epochs, helping you monitor the training progress and determine when the model has converged.
+
 ### Applying Style to New Images
 
 To apply a trained style model to a new image:
@@ -101,6 +105,40 @@ For faster experimentation, you can also use a smaller subset of images.
 
 This repository includes pre-trained models for various artistic styles that can be used without training. These models were trained on the COCO dataset and can be applied directly to new content images.
 
+### Style Gallery
+
+Below is a gallery showing different style models applied to similar scenes:
+
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="images/stylized_EdHopper_SFO_switzerland.jpg" width="250px"></td>
+      <td><img src="images/stylized_scream_SFO_embarcedero1.jpg" width="250px"></td>
+      <td><img src="images/stylized_guguin_SFO_embarcedero2.jpg" width="250px"></td>
+    </tr>
+    <tr>
+      <td>Edward Hopper Style</td>
+      <td>The Scream Style</td>
+      <td>Gauguin Style</td>
+    </tr>
+  </table>
+</div>
+
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="images/stylized_kandinsky_flower_3.jpg" width="250px"></td>
+      <td><img src="images/stylized_scream_iceland.jpg" width="250px"></td>
+      <td><img src="images/stylized_scream_iceland_copy.jpg" width="250px"></td>
+    </tr>
+    <tr>
+      <td>Kandinsky Style</td>
+      <td>The Scream - Iceland (Version 1)</td>
+      <td>The Scream - Iceland (Version 2)</td>
+    </tr>
+  </table>
+</div>
+
 ## Method
 
 The implementation follows the approach described by Johnson et al., using:
@@ -112,6 +150,23 @@ The implementation follows the approach described by Johnson et al., using:
    - Style loss: Ensures the style of the reference image is transferred
 
 The transformer network is trained to minimize both losses simultaneously, creating a balance between content preservation and style transfer.
+
+### Style Transfer Process
+
+The style transfer process transforms a content image into the style of a reference artwork while preserving the original content:
+
+<div align="center">
+  <table>
+    <tr>
+      <td>Content (Lake Tahoe)</td>
+      <td>↓</td>
+      <td>Edward Hopper Style</td>
+    </tr>
+    <tr>
+      <td><img src="images/stylized_EdHopper_tahoe.jpg" width="350px"></td>
+    </tr>
+  </table>
+</div>
 
 ## Acknowledgements
 
