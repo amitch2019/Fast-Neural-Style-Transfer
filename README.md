@@ -153,20 +153,7 @@ The transformer network is trained to minimize both losses simultaneously, creat
 
 ### Style Transfer Process
 
-The style transfer process transforms a content image into the style of a reference artwork while preserving the original content:
-
-<div align="center">
-  <table>
-    <tr>
-      <td>Content (Lake Tahoe)</td>
-      <td>↓</td>
-      <td>Edward Hopper Style</td>
-    </tr>
-    <tr>
-      <td><img src="images/stylized_EdHopper_tahoe.jpg" width="350px"></td>
-    </tr>
-  </table>
-</div>
+The style transfer process transforms a content image into the style of a reference artwork while preserving the original content
 
 ## Acknowledgements
 
