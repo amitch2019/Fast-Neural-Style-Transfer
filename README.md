@@ -129,7 +129,7 @@ Below is a gallery showing different style models applied to similar scenes:
     <tr>
       <td><img src="images/stylized_kandinsky_flower_3.jpg" width="250px"></td>
       <td><img src="images/stylized_scream_iceland.jpg" width="250px"></td>
-      <td><img src="images/stylized_scream_iceland_copy.jpg" width="250px"></td>
+      <td><img src="images/stylized_EdHopper_chicago.jpg" width="250px"></td>
     </tr>
     <tr>
       <td>Kandinsky Style</td>
