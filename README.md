@@ -133,8 +133,8 @@ Below is a gallery showing different style models applied to similar scenes:
     </tr>
     <tr>
       <td>Kandinsky Style</td>
-      <td>The Scream - Iceland</td>
-      <td>Chicago Skyline</td>
+      <td>The Scream Style</td>
+      <td>Edward Hopper Style</td>
     </tr>
   </table>
 </div>
